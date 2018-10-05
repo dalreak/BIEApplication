@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //온도 표시 그래프 레이아웃
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/tempchart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    //습도 표시 그래프 레이아웃
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/humchart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    //수량 표시 그래프 레이아웃
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/wlevchart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    //토양습도 표시 그래프 레이아웃
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/swlevchart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
