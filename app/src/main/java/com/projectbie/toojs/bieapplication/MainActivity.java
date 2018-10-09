@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         //InitClient initclient = new InitClient(this);
         //initclient.getjsonData();
 
-        InitLiveChart initlivechart = new InitLiveChart(this);
+        LiveChartThread thread = new LiveChartThread(this);
 
 
     }
