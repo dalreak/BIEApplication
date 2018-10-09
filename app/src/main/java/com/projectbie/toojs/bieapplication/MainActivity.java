@@ -8,13 +8,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        //InitClient initclient = new InitClient(this);
-        //initclient.getjsonData();
-
-        LiveChartThread thread = new LiveChartThread(this);
-
-
+        setContentView(R.layout.activity_login);
     }
 }
