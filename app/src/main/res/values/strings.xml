@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">BIEApplication</string>
+    <string name="ok">OK</string>
     <string name="login_name">ID</string>
     <string name="login_password">Password</string>
     <string name="login_login">Login</string>
@@ -7,4 +8,11 @@
     <string name="login_remember">Remember me</string>
     <string name="login_hint_name">Enter your ID</string>
     <string name="login_hint_password">Enter your password</string>
+    <string name="login_error_title">Login error</string>
+    <string name="login_error_idblank">Enter your ID.</string>
+    <string name="login_error_pwblank">Enter your password.</string>
+    <string name="login_error_noid">This ID does not exist.</string>
+    <string name="login_error_idpwmismatch">ID/PW does not match.</string>
+    <string name="login_error_failedtoconnect">Failed to connect to the server.</string>
+    <string name="login_loggingin">Logging in...</string>
 </resources>
