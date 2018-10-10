@@ -7,10 +7,13 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/login_layoutroot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -39,12 +42,14 @@
                 android:id="@+id/text_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
                 android:ems="10"
                 android:hint="@string/login_hint_name"
-                android:inputType="textPersonName"
+                android:inputType="textFilter"
                 android:textSize="14sp"
                 tools:layout_editor_absoluteY="170dp"
-                android:autofillHints="" tools:targetApi="o" />
+                tools:targetApi="o" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -62,12 +67,13 @@
                 android:id="@+id/text_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/login_hint_password"
                 android:inputType="textPassword"
                 android:textSize="14sp"
                 tools:layout_editor_absoluteY="238dp"
-                android:autofillHints="" tools:targetApi="o" />
+                tools:targetApi="o" />
 
             <CheckBox
                 android:id="@+id/cb_remember"
@@ -100,7 +106,7 @@
                 android:layout_weight="1"
                 android:text="@string/login_login"
                 android:textAllCaps="false"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
                 android:textColorLink="@color/colorPrimary"
                 app:layout_constraintTop_toBottomOf="@+id/cb_remember"
                 tools:layout_editor_absoluteX="28dp" />
@@ -114,7 +120,7 @@
                 android:layout_weight="1"
                 android:text="@string/login_register"
                 android:textAllCaps="false"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
                 app:layout_constraintTop_toBottomOf="@+id/cb_remember"
                 tools:layout_editor_absoluteX="200dp" />
 
