@@ -36,10 +36,10 @@ public class LiveChartThread {
 
     public LiveChartThread(Context context){
 
-		tempchart = (LineChart) ((MainActivity) context).findViewById(R.id.tempchart);
-		humchart = (LineChart) ((MainActivity) context).findViewById(R.id.humchart);
-		wlevchart = (LineChart) ((MainActivity) context).findViewById(R.id.wlevchart);
-		swlevchart = (LineChart) ((MainActivity) context).findViewById(R.id.swlevchart);
+		tempchart = (LineChart) ((ChartActivity) context).findViewById(R.id.tempchart);
+		humchart = (LineChart) ((ChartActivity) context).findViewById(R.id.humchart);
+		wlevchart = (LineChart) ((ChartActivity) context).findViewById(R.id.wlevchart);
+		swlevchart = (LineChart) ((ChartActivity) context).findViewById(R.id.swlevchart);
 
 		String chartname[]={"temperature", "humidity", "water-level", "soil-water-level"};
 
@@ -73,7 +73,7 @@ public class LiveChartThread {
             @Override
             public void run() {
                 while(true){
-                    ((MainActivity) context).runOnUiThread(runnable);    //UI 쓰레드 위에 생성한 runnable 실행
+                    ((ChartActivity) context).runOnUiThread(runnable);    //UI 쓰레드 위에 생성한 runnable 실행
                     try{
                         Thread.sleep(100); // 0.1 초 쉼
                     }catch(InterruptedException ie){
