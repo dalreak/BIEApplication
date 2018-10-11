@@ -54,7 +54,7 @@ public class LoginThread {
  */
 class LoginAsyncTask extends AsyncTask<String, Integer, Integer> {
 
-    private String loginURL = "https://binglebingle.tk/?c=requestLogin";
+    private String loginURL = "https://104.154.28.28:4430/?c=requestLogin";
     private WeakReference<ViewGroup> vg;
     private WeakReference<View> modalView;
     private WeakReference<TextView> modalTextView;
