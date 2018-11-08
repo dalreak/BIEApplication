@@ -26,12 +26,7 @@ public class LiveChartThread {
     private LineChart humchart;
     private LineChart wlevchart;
     private LineChart swlevchart;
-   /*   쓰레드 수정중
-    private Thread tempthread;
-    private Thread humthread;
-    private Thread wlevthread;
-    private Thread swlevthread;
-    */
+
    private Thread updatedata;
 
     public LiveChartThread(Context context){
